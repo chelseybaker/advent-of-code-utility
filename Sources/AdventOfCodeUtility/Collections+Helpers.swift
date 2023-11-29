@@ -9,7 +9,7 @@ import Foundation
 
 extension Array where Element: Equatable {
 
-    func unique() -> Array {
+    public func unique() -> Array {
         var uniqueItems: [Element] = []
         for item in self {
             guard !uniqueItems.contains(item) else { continue }
